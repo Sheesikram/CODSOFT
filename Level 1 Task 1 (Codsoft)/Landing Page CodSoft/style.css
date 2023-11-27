@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Gilroy";
+    box-sizing: border-box;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+
+}
+#main{
+    width: 100%;
+    min-height: 100vh;
+}
+#top{
+    width:100%;
+    min-height:60vh;
+    background-image: url(https://img.freepik.com/free-vector/abstract-white-shapes-background_79603-1362.jpg?w=740&t=st=1701097540~exp=1701098140~hmac=aa3c948edde7797566956d8db09f1a031885dd3334983823f59a21aef9fab62f);
+background-size: cover;
+background-position: center;
+}
+#overlay{position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0);
+}
+#text{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+    padding: 0 10vw;
+color:black
+}
+#textright{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#textright p {
+    font-size: 12px;
+    width: 40%;
+}
+#textright i {
+    color: rgb(7, 164, 242);
+}
+#text h1{
+    font-size: 5vw;
+}
+#bottom{
+    display: flex;
+    width:100%;
+    min-height:40vh;
+    background-color: #444;
+
+}
+#bone{
+    padding: 30px;
+    width: 25%;
+    min-height: inherit;
+    background-color: rgb(191, 135, 238);
+}
+#bone p{
+    font-size: 12px;
+    margin-top: 20px;
+}
+#btwo{
+    width: 25%;
+    min-height: inherit;
+background-image: url(https://images.unsplash.com/photo-1557941760-987c3f403d5a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjZ8fG9yYW5nZXxlbnwwfHwwfHx8MA%3D%3D);
+background-size: cover;
+background-position: center;
+}
+#bthree{
+    width: 20%;
+    min-height: inherit;
+    background-color: rebeccapurple;
+}
+#bthreetop{
+    width: 100%;
+    min-height: 20vh;
+    padding: 20px;
+    background-color: orangered;
+    color: #fff;
+}
+#bthreetop p{
+    font-size: 10px;
+    margin-top: 10px;
+    
+}
+#bthreebottom{
+    width: 100%;
+    min-height: 20vh;
+background-image: url(https://images.unsplash.com/photo-1586439702132-55ce0da661dd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAwfHxvcmFuZ2V8ZW58MHx8MHx8fDA%3D);
+background-size: cover;
+background-position: center;}
+#bfour{
+    width: 30%;
+    min-height: inherit;
+    padding: 30px;
+    background: color #4121b7;
+    color: #fff;
+}
+.notf{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.notf #photo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url("SheesIkram.jpg");
+    background-size: cover;
+}
+.notf p{
+    width: 90%;
+    font-size: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background-color: aqua;
+
+}
+.footer-text p{
+font-size: 1.6rem;
+
+}
+
+
+@media(max-width: 500px){
+    #overlay #text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #text h1{
+        font-size: 10vw;
+    }
+    #bottom{
+        min-height: 20vh;
+    }
+    #overlay #text #textright{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    #overlay #text #textright p{
+      width: initial;
+      margin-top: 20px;
+    }
+    #overlay #text #textright #icons{
+margin-top: 30px;
+    }
+    #bottom {
+        flex-direction: column;
+    }
+    #bone{
+        width: 100%;
+    }
+    #btwo{
+        width: 100%;
+    }
+    #bthree{
+        flex-direction: column;
+        width: 100%;
+    }
+    #bthreebottom{
+        min-height: 40vh;
+    }
+    #bfour{
+        width: 100%;
+    }
+}
